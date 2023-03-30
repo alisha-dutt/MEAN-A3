@@ -1,0 +1,25 @@
+<h1>Destinations Details</h1>
+<div class="bg-translucent" style="width:500px;">
+{{!-- <form method="post"> --}}
+    <form method="post">
+    <fieldset class="pt-3">
+        <label for="placeName">Name: *</label>
+        <input type="text" name="placeName" id="placeName" required />
+    </fieldset>
+    <fieldset>
+        <label for="placeCity">City: *</label>
+        <select name="placeCity" id="placeCity" required>
+            {{#each cities}}
+                <option>{{this.name}}</option>
+            {{/each}}
+        </select>
+        <span> Can't find your city?</span><u><small><a class="nav-link text-dark" href="/cities/create">Add city from here</a></small></u>
+    </fieldset>
+    <fieldset>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments"></textarea>
+    </fieldset>
+    <button class="btn btn-warning offset-1 mb-3">Save</button>
+</form>
+
+</div>

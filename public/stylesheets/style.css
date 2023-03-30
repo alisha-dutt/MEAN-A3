@@ -1,0 +1,117 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  color: #DB0007;
+}
+
+main {
+  padding: 25px;
+}
+
+.navbar-dark {
+  background-color: #198754;
+  padding-left: 20px;
+  /* min-height: 20px; */
+}
+
+h1, i {
+  color: #FBC02D;
+  padding: 4px;
+}
+
+i:hover {
+  color: #DB0007;
+}
+
+.nav-link {
+  color: #FFFFFF;
+}
+
+fieldset {
+  border: none;
+  margin: 5px;
+}
+
+label {
+  width: 130px;
+}
+
+.table {
+  border-spacing: 0 0.85rem !important;
+  border-radius: 10px;
+}
+
+.table .dropdown {
+  display: inline-block;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.table thead tr,
+.table thead th {
+  border: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.table td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.table td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+thead {
+  color: #ffffff;
+  /* background-color: #457206; */
+}
+tbody{
+  color: #000000;
+  /* background-color: #FBC02D; */
+  
+}
+
+#imgShowHide {
+  cursor: pointer;
+}
+
+main{
+/* background-image: url(../images/home-bg.jpg); */
+background-size: cover; 
+min-height: 769px;
+}
+.bg-translucent{
+  background-color: #ffffffb2;
+  border-radius: 30px;
+  }
+.home-loud{
+  font-size: 120px;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  filter: drop-shadow(0 0 0.75rem #4caf50);
+}
+.drop{
+  filter: drop-shadow(0 0 0.75rem #4caf50);
+}
+.google-signin{
+  width: 157px;
+}
+.facebook-signin{
+  width: 172px;
+}

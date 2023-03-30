@@ -1,0 +1,27 @@
+<h1>Login</h1>
+{{#if messages}}
+    <p class="alert alert-danger">Invalid Login</p>        
+{{else}}
+    <p class="alert alert-secondary">Please enter your credentials</p>   
+{{/if}}
+<div class="container bg-translucent p-2 pt-4">
+<form method="post">
+    <fieldset class="form-group">
+        <label for="username" class="col-2 control-label">Username: *</label>
+        <input class="w-25" name="username" id="username" required />
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="password" class="col-2 control-label">Password: *</label>
+        <input class="w-25" name="password" id="password" type="password" required />
+    </fieldset>
+    <fieldset class="form-group">
+        <button class="btn btn-secondary offset-2 w-25">Login</button>
+        <br />
+        <a href="/auth/google"><img src="/images/google.png" class="google-signin offset-2">
+        </a>
+         <a href="/auth/github"><img src="/images/github.jpg" alt="github login" class="facebook-signin"></a>
+        <hr />
+        Need an account? <a href="/auth/register" title="Register">Register</a>
+    </fieldset>
+</form>
+</div>
